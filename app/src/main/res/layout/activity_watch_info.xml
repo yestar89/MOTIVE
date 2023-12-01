@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F7F7F7"
+    android:orientation="vertical"
+    tools:context=".Watch.WatchInfoActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:id="@+id/backbtn102"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="365dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:minWidth="48dp"
+            android:minHeight="48dp"
+            app:srcCompat="@drawable/leftarrow"
+            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+        <TextView
+            android:id="@+id/titletv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="26dp"
+            android:fontFamily="@font/pretendard_semibold"
+            android:text="정보"
+            android:textColor="#111111"
+            android:textSize="24sp"/>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="80dp">
+
+            <RelativeLayout
+                android:layout_width="370dp"
+                android:layout_height="55dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/liner2">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="이름"
+                    android:textSize="18sp"
+                    android:fontFamily="@font/pretendard_medium"
+                    android:textColor="#111111"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="16dp"/>
+
+                <ImageButton
+                    android:id="@+id/nextbtn11"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="340dp"
+                    android:layout_marginTop="18dp"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:minWidth="48dp"
+                    android:minHeight="48dp"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/miniarrow"
+                    tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginLeft="150dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="40dp"
+                    android:fontFamily="@font/pretendard_medium"
+                    android:text="홍길동의 Motive Watch"
+                    android:textColor="#636262"
+                    android:textSize="18sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="370dp"
+                android:layout_height="55dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/liner2">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="버전"
+                android:textSize="18sp"
+                android:fontFamily="@font/pretendard_medium"
+                android:textColor="#111111"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="16dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginLeft="240dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="12dp"
+                    android:fontFamily="@font/pretendard_medium"
+                    android:text="9.5.1 (20T570)"
+                    android:textColor="#111111"
+                    android:textSize="18sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="370dp"
+                android:layout_height="55dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/liner2">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="모델 번호"
+                    android:textSize="18sp"
+                    android:fontFamily="@font/pretendard_medium"
+                    android:textColor="#111111"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="16dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginLeft="250dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="16dp"
+                    android:fontFamily="@font/pretendard_medium"
+                    android:text="MKQ93KH/A"
+                    android:textColor="#111111"
+                    android:textSize="18sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="370dp"
+                android:layout_height="55dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/liner2">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="일련 번호"
+                    android:textSize="18sp"
+                    android:fontFamily="@font/pretendard_medium"
+                    android:textColor="#111111"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="16dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginLeft="220dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="14dp"
+                    android:fontFamily="@font/pretendard_medium"
+                    android:text="HP1G95QRQ07R"
+                    android:textColor="#111111"
+                    android:textSize="18sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="370dp"
+                android:layout_height="55dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/liner2">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Wi-Fi 주소"
+                    android:textSize="18sp"
+                    android:fontFamily="@font/pretendard_medium"
+                    android:textColor="#111111"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="16dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginLeft="200dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="11dp"
+                    android:fontFamily="@font/pretendard_medium"
+                    android:text="18:56:C3:BE:6B:0W"
+                    android:textColor="#111111"
+                    android:textSize="18sp" />
+
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

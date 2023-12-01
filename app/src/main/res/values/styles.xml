@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorSurface">@color/colorPrimary</item>
+    </style>
+
+    <style name="CalendarHeaderStyle" parent="TextAppearance.AppCompat.Body2">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+    <style name="CalendarDateStyle" parent="TextAppearance.AppCompat.Body1">
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="CalendarWeekDayStyle" parent="TextAppearance.AppCompat.Small">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@android:color/darker_gray</item>
+    </style>
+
+
+    <style name="DatePickerStyle" parent="Theme.AppCompat.Light.Dialog">
+        <item name="colorAccent">#F6CECE</item>
+    </style>
+
+
+
+
+
+
+    <style name="CustomMaterialDatePickerTheme" parent="@style/ThemeOverlay.MaterialComponents.MaterialCalendar">
+        <item name="materialCalendarStyle">@style/CustomMaterialCalendar</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryVariant">@color/colorPrimaryVariant</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="CustomMaterialCalendar" parent="Widget.MaterialComponents.MaterialCalendar">
+        <!-- 원하는 속성 추가 -->
+        <item name="materialButtonStyle">@style/CustomMaterialButton</item>
+    </style>
+
+    <style name="CustomMaterialButton" parent="Widget.MaterialComponents.Button">
+        <!-- 버튼의 스타일을 변경하거나 추가하는 등의 작업을 수행할 수 있습니다. -->
+    </style>
+
+
+    <style name="Theme.MotiveGoal" parent="Base.Theme.MotiveGoal" />
+
+
+
+
+
+
+</resources>

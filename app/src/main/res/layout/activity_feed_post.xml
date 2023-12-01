@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Club.Feed.PostActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="top">
+
+        <ImageButton
+            android:id="@+id/close"
+            android:layout_width="33dp"
+            android:layout_height="38dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="16dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:minWidth="36dp"
+            android:minHeight="36dp"
+            app:srcCompat="@drawable/leftarrow"
+            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+
+
+        <TextView
+            android:id="@+id/ntf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="94dp"
+            android:layout_marginTop="25dp"
+            android:fontFamily="@font/pretendard_semibold"
+            android:text="피드 공유하기"
+            android:gravity="center"
+            android:textColor="#111111"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/post"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="96dp"
+            android:layout_marginTop="25dp"
+            android:fontFamily="@font/pretendard_semibold"
+            android:text="공유"
+            android:textColor="#FA4756"
+            android:textSize="20sp" />
+
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="#C1C1C1" />
+
+    <LinearLayout
+        android:id="@+id/category"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="16dp">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/sports"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:background="@drawable/makebutton2"
+            android:fontFamily="@font/pretendard_semibold"
+            android:text="운동"
+            android:textColor="#999999"
+            android:textSize="18sp"
+            app:layout_constraintStart_toEndOf="@+id/appCompatButton"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/study"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/makebutton2"
+            android:fontFamily="@font/pretendard_semibold"
+            android:text="공부"
+            android:textColor="#999999"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <!--        android:backgroundTint="#FDEAEB"-->
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+
+        <EditText
+            android:id="@+id/description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginRight="10dp"
+            android:background="@android:color/transparent"
+            android:fontFamily="@font/pretendard_regular"
+            android:hint="오늘 운동 or 공부 중 이뤄냈던 것이 있나요?"
+            android:paddingStart="8dp"
+            android:textSize="18sp" />
+
+        <ProgressBar
+            android:id="@+id/progressbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_gravity="center"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/image_added"
+            android:layout_width="40dp"
+            android:layout_height="38dp"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="500dp"
+            android:scaleType="fitCenter"
+            android:background="@drawable/camera" />
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

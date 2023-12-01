@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-sdk
+        android:minSdkVersion="29"
+        android:targetSdkVersion="34"
+        tools:overrideLibrary="androidx.recyclerview.widget" />
+
+    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT" />
+    <uses-permission android:name="android.permission.BLUETOOTH_SCAN" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_white"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_round_white"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Motive_v1"
+        tools:targetApi="31">
+        <activity
+            android:name="com.example.motive_v1.Mypage.activity_mypg_anal"
+            android:exported="true" />
+        <!-- 로그인 -->
+        <activity
+            android:name="com.example.motive_v1.Login.Signin"
+            android:exported="true"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.motive_v1.Login.Signup"
+            android:exported="true" />
+        <activity
+            android:name="com.example.motive_v1.Login.SetProfile"
+            android:exported="true" />
+        <activity
+            android:name="com.example.motive_v1.User.DetailProfile"
+            android:exported="true" /> <!-- 1. 클럽 화면 -->
+        <activity
+            android:name="com.example.motive_v1.Club.ClubActivity"
+            android:exported="true" /> <!-- 1-2. 피드 -->
+        <activity
+            android:name="com.example.motive_v1.Club.Feed.PostActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.example.motive_v1.Club.Feed.WriteComment"
+            android:enableOnBackInvokedCallback="true"
+            android:exported="true"
+            android:parentActivityName="com.example.motive_v1.Club.ClubActivity"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name="com.example.motive_v1.Club.Feed.UpdateComment"
+            android:exported="false" />
+        <activity
+            android:name="com.example.motive_v1.Club.Feed.PostEdit"
+            android:exported="false" /> <!-- 다이어리 -->
+        <activity
+            android:name="com.example.motive_v1.Club.Diary.DiaryWrite"
+            android:exported="true"></activity>
+        <activity
+            android:name="com.example.motive_v1.Club.Diary.ReadOnlyNoteActivity"
+            android:label="ReadOnlyNoteActivity"></activity> <!-- 1-3. club-tip 팁쳐 -->
+        <activity android:name="com.example.motive_v1.Club.Tip.TipQuestion" /> <!-- 다른 사용자 프로필 클릭시 -->
+        <activity
+            android:name="com.example.motive_v1.Mypage.MypageActivity"
+            android:exported="true" /> <!-- 2. 목표 화면 -->
+        <activity
+            android:name="com.example.motive_v1.Goal.GoalActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.example.motive_v1.Goal.TodayActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.example.motive_v1.Goal.GoalAddPage"
+            android:exported="true"
+            android:theme="@style/Theme.MotiveGoal" />
+        <activity
+            android:name="com.example.motive_v1.Goal.GoalDetailActivity"
+            android:exported="true" /> <!-- 3. 홈 화면 -->
+        <activity
+            android:name="com.example.motive_v1.Home.HomeActivity"
+            android:exported="true" /> <!-- 4. 워치 화면 -->
+        <activity
+            android:name="com.example.motive_v1.Watch.WatchActivity"
+            android:exported="true" /> <!-- 4-1. 워치 일반 설정 화면 -->
+        <!-- 4-2. 워치 알림 설정 화면 -->
+        <activity
+            android:name="com.example.motive_v1.Watch.WatchAlarmActivity"
+            android:exported="true"></activity> <!-- 4-3. 워치 정보 설정 화면 -->
+        <activity
+            android:name="com.example.motive_v1.Watch.WatchInfoActivity"
+            android:exported="true"></activity> <!-- 5. 마이페이지 화면 -->
+        <activity
+            android:name="com.example.motive_v1.Mypage.MypageActivity"
+            android:exported="true"
+            tools:ignore="DuplicateActivity" />
+        <activity
+            android:name="com.example.motive_v1.Mypage.MypgModifyActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.motive_v1.Mypage.MypgInformationActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.motive_v1.Mypage.Mypgnotice"
+            android:label="Mypgnotice"></activity>
+        <activity
+            android:name="com.example.motive_v1.Mypage.Mypgask"
+            android:label="Mypgask"></activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/club_tab_feed"
+        android:title="NO TIME 피드"
+        />
+
+    <item
+        android:id="@+id/club_tab_diary"
+        android:title="YES! 다이어리"
+        />
+
+    <item
+        android:id="@+id/club_tab_pro"
+        android:title="프로갓생러"
+        />
+</menu>

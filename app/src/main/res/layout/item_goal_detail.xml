@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:id="@+id/recyclerViewdetail">
+
+    <TextView
+        android:id="@+id/eachDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="2(토)"
+        android:textSize="18sp"
+        android:gravity="center_vertical"
+        android:padding="4dp"
+        android:textColor="#111111"
+        android:fontFamily="@font/pretendard_semibold"/>
+
+    <LinearLayout
+        android:background="@drawable/linerdetail"
+        android:orientation="vertical"
+        android:elevation="1dp"
+        android:id="@+id/goal_item"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="8dp"
+        android:visibility="visible"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center_vertical">
+
+        <LinearLayout
+            android:id="@+id/layout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <!--체크박스-->
+            <ImageView
+                android:id="@+id/checkbox"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="18dp"
+                android:padding="0sp"
+                android:scaleType="centerInside"
+                android:src="@drawable/checkmarkoff"
+                android:clickable="true"
+                android:focusable="true"
+                android:contentDescription="TODO"
+                android:background="?attr/selectableItemBackground"/>
+
+            <!--목표-->
+            <TextView
+                android:id="@+id/goalTitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="18dp"
+                android:text="Test"
+                android:textColor="#111111"
+                android:textSize="18sp"
+                android:maxLength="20"
+                android:gravity="center_vertical" />
+
+            <!--메모작성-->
+
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

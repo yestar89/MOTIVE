@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F7F7F7"
+    tools:context=".Watch.WatchActivity">
+
+    <TextView
+        android:id="@+id/goal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/pretendard_semibold"
+        android:text="시계"
+        android:textSize="20dp"
+        android:textColor="#111111"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:orientation="vertical"
+        android:layout_height="match_parent"
+        tools:ignore="MissingConstraints">
+
+        <RelativeLayout
+            android:layout_width="411dp"
+            android:layout_height="match_parent"
+            tools:ignore="ExtraText">
+
+            <View
+                android:id="@+id/rectangle_1"
+                android:layout_width="340dp"
+                android:layout_height="166dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="24dp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginTop="70dp"
+                android:layout_marginEnd="24dp"
+                android:background="@drawable/liner2"
+                android:gravity="center"
+                android:visibility="visible" />
+
+
+            <!-- TextView for rectangle_1 -->
+            <TextView
+                android:id="@+id/connectTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/rectangle_1"
+                android:layout_alignBottom="@+id/rectangle_1"
+                android:layout_marginTop="196dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="12dp"
+                android:background="@drawable/square2"
+                android:fontFamily="@font/pretendard_semibold"
+                android:gravity="center"
+                android:text="기기 연결"
+                android:textColor="#111111"
+                android:textSize="14sp"
+                android:visibility="visible" />
+
+            <ImageView
+                android:id="@+id/imV_mypg_photo"
+                android:layout_width="260dp"
+                android:layout_height="80dp"
+                android:layout_alignStart="@+id/rectangle_1"
+                android:layout_alignTop="@+id/rectangle_1"
+                android:layout_alignEnd="@+id/rectangle_1"
+                android:layout_alignBottom="@+id/rectangle_1"
+                android:layout_marginStart="52dp"
+                android:layout_marginTop="43dp"
+                android:layout_marginEnd="51dp"
+                android:layout_marginBottom="43dp"
+                android:gravity="center"
+                android:src="@drawable/watch_rectangle" />
+
+            <Button
+                android:id="@+id/btn21"
+                android:layout_width="338dp"
+                android:layout_height="60dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="24dp"
+                android:layout_below="@+id/btn22"
+                android:background="@drawable/liner3"
+                android:drawableRight="@drawable/miniarrow"
+                android:fontFamily="@font/pretendard_regular"
+                android:gravity="left|center_vertical"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:text="정보"
+                android:textColor="#111111"
+                android:textSize="20dp" />
+
+            <Button
+                android:id="@+id/btn22"
+                android:layout_width="338dp"
+                android:layout_height="60dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="24dp"
+                android:background="@drawable/liner3"
+                android:layout_below="@+id/rectangle_1"
+                android:drawableRight="@drawable/miniarrow"
+                android:fontFamily="@font/pretendard_regular"
+                android:gravity="left|center_vertical"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:text="알림 설정"
+                android:textColor="#111111"
+                android:textSize="20dp" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/bottom_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toTopOf="@+id/bottom_nav" />
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_nav"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="#FFFFFF"
+        app:itemIconTint="@drawable/menu_selector_color"
+        app:itemTextColor="@drawable/menu_selector_color"
+        app:labelVisibilityMode="labeled"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginEnd="0dp"
+        android:layout_marginTop="0dp"
+        app:menu="@menu/main_menu_bottom"
+        tools:ignore="MissingConstraints" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f7f7f7"
+    tools:context=".Mypage.MypgInformationActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="411dp"
+        android:layout_height="80dp"
+        android:background="#ffffff"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RelativeLayout
+            android:id="@+id/myif_relativeLayout1"
+            android:layout_width="50dp"
+            android:layout_height="80dp">
+
+            <ImageButton
+                android:id="@+id/imageButton12"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="26dp"
+                android:background="@android:color/transparent"
+                app:srcCompat="@drawable/leftarrow"
+                tools:ignore="SpeakableTextPresentCheck" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout2"
+            android:layout_width="211dp"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView38"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="34dp"
+                android:fontFamily="@font/pretendard_semibold"
+                android:letterSpacing="-0.03"
+                android:text="내 정보"
+                android:textColor="#111111"
+                android:textSize="20sp"
+                android:textStyle="normal" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout3"
+            android:layout_width="150dp"
+            android:layout_height="80dp">
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="60dp"
+                android:layout_height="36dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="14dp"
+                android:textColor="#111111"
+                android:textSize="18sp"
+                android:fontFamily="@font/pretendard_medium"
+                android:background="@drawable/square2"
+                android:text="편집" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="440dp"
+        android:background="#ffffff"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout1">
+
+        <RelativeLayout
+            android:id="@+id/post_relativeLayout2"
+            android:layout_width="411dp"
+            android:layout_height="250dp">
+
+            <ImageView
+                android:id="@+id/imageView23"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="26dp"
+                app:srcCompat="@drawable/myinf_box" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/imV_infor_pro"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_alignStart="@+id/imageView23"
+                android:layout_alignTop="@+id/imageView23"
+                android:layout_alignEnd="@+id/imageView23"
+                android:layout_marginStart="143dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="142dp"
+                app:srcCompat="@drawable/bboong" />
+
+            <TextView
+                android:id="@+id/tV_infor_name"
+                android:layout_width="107dp"
+                android:layout_height="34dp"
+                android:layout_below="@+id/imV_infor_pro"
+                android:layout_alignStart="@+id/imV_infor_pro"
+                android:layout_alignEnd="@+id/imV_infor_pro"
+                android:layout_marginStart="-14dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="-18dp"
+                android:fontFamily="@font/pretendard_semibold"
+                android:gravity="center"
+                android:letterSpacing="-0.03"
+                android:text="나름개발자"
+                android:textColor="#111111"
+                android:textSize="18sp"
+                android:textStyle="normal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/tV_infor_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tV_infor_name"
+                android:layout_alignStart="@+id/imageView23"
+                android:layout_alignEnd="@+id/imageView23"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="나의 다짐 조회 "
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/updatePw"
+            android:layout_width="411dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="0dp">
+
+
+            <ImageView
+                android:id="@+id/updatepass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="12.5dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="12.5dp"
+                app:srcCompat="@drawable/mini_right_arrow"
+                tools:ignore="ImageContrastCheck" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="13dp"
+                android:layout_marginBottom="13dp"
+                android:fontFamily="@font/pretendard_regular"
+                android:letterSpacing="-0.02"
+                android:lineSpacingExtra="8sp"
+                android:text="비밀번호 변경"
+                android:textColor="#111111"
+                android:textSize="14sp"
+                android:textStyle="normal" />
+
+            <View
+                android:id="@+id/divider6"
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="44dp"
+                android:layout_marginEnd="16dp"
+                android:background="?android:attr/listDivider"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout2_2"
+            android:layout_width="411dp"
+            android:layout_height="45dp"
+            android:layout_below="@+id/relativeLayout2_1"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="0dp">
+
+
+            <ImageView
+                android:id="@+id/imageView12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="12.5dp"
+                android:layout_marginEnd="16dp"
+                app:srcCompat="@drawable/mini_right_arrow" />
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="13dp"
+                android:layout_marginBottom="13dp"
+                android:fontFamily="@font/pretendard_regular"
+                android:letterSpacing="-0.02"
+                android:lineSpacingExtra="8sp"
+                android:text="SNS  계정 연동"
+                android:textColor="#111111"
+                android:textSize="14sp"
+                android:textStyle="normal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <View
+                android:id="@+id/divider7"
+                android:layout_width="380dp"
+                android:layout_height="1dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="44dp"
+                android:layout_marginEnd="15dp"
+                android:background="?android:attr/listDivider" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/goLogout"
+            android:layout_width="411dp"
+            android:layout_height="45dp"
+            android:layout_below="@+id/relativeLayout2_2"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="0dp">
+
+
+            <ImageView
+                android:id="@+id/imageView13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="12.5dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="16dp"
+                app:srcCompat="@drawable/mini_right_arrow" />
+
+            <TextView
+                android:id="@+id/goLogout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="24dp"
+                android:layout_marginBottom="13dp"
+                android:fontFamily="@font/pretendard_regular"
+                android:letterSpacing="-0.02"
+                android:lineSpacingExtra="8sp"
+                android:text="로그아웃"
+                android:textColor="#111111"
+                android:textSize="14sp"
+                android:textStyle="normal" />
+
+            <View
+                android:id="@+id/divider10"
+                android:layout_width="380dp"
+                android:layout_height="1dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="44dp"
+                android:layout_marginEnd="16dp"
+                android:background="?android:attr/listDivider" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/secession"
+            android:layout_width="411dp"
+            android:layout_height="45dp"
+            android:layout_below="@+id/relativeLayout2_3"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="0dp">
+
+
+            <ImageView
+                android:id="@+id/imageView14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="12.5dp"
+                android:layout_marginEnd="16dp"
+                app:srcCompat="@drawable/mini_right_arrow" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="24dp"
+                android:layout_marginBottom="13dp"
+                android:fontFamily="@font/pretendard_regular"
+                android:letterSpacing="-0.02"
+                android:lineSpacingExtra="8sp"
+                android:text="회원탈퇴"
+                android:textColor="#111111"
+                android:textSize="14sp"
+                android:textStyle="normal" />
+
+            <View
+                android:id="@+id/divider11"
+                android:layout_width="380dp"
+                android:layout_height="1dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="44dp"
+                android:layout_marginEnd="16dp"
+                android:background="?android:attr/listDivider" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

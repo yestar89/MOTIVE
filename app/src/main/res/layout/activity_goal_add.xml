@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f5f5f5"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Goal.GoalAddPage">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true">
+
+        <ImageButton
+            android:id="@+id/backButton"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="26dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="뒤로 가기 버튼"
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/back" />
+
+        <TextView
+            android:id="@+id/TopTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="44dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/pretendard_semibold"
+            android:text="목표 개설하기"
+            android:textSize="20dp" />
+
+        <android.widget.Button
+            android:id="@+id/exercise_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:layout_marginStart="27dp"
+            android:layout_marginTop="70dp"
+            android:textSize="18dp"
+            android:fontFamily="@font/pretendard_semibold"
+            android:text="운동"
+            android:textColor="#ffffff"
+            android:background="@drawable/makebutton"/>
+
+        <android.widget.Button
+            android:id="@+id/study_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:layout_marginStart="125dp"
+            android:layout_marginTop="70dp"
+            android:textSize="18dp"
+            android:textColor="#999999"
+            android:fontFamily="@font/pretendard_semibold"
+            android:text="공부"
+            android:background="@drawable/makebutton2"/>
+
+        <RelativeLayout
+            android:id="@+id/WriteField"
+            android:layout_width="352dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="130dp"
+            android:layout_marginStart="30dp"
+            android:background="@drawable/liner4"
+            android:elevation="4dp">
+
+            <EditText
+                android:id="@+id/goalTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="14dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/pretendard_medium"
+                android:hint="목표 제목 입력"
+                android:textColor="#111111"
+                android:focusable="true"
+                android:maxLength="40"
+                android:textCursorDrawable="@null"
+                android:textSize="20dp"
+                android:background="@null" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="340dp"
+            android:layout_marginTop="210dp"
+            android:fontFamily="@font/pretendard_light"
+            android:hint="0/40"
+            android:textColor="#A5A5A5"
+            android:textSize="16dp" />
+
+
+        <RelativeLayout
+            android:id="@+id/dayselect"
+            android:layout_width="352dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="30dp"
+            android:layout_below="@+id/count"
+            android:background="@drawable/liner4"
+            android:elevation="4dp">
+
+            <!-- 선택한 날짜를 표시할 TextView -->
+            <TextView
+                android:id="@+id/date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="14dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/pretendard_medium"
+                android:text="날짜 선택"
+                android:textColor="#111111"
+                android:textSize="18dp" />
+
+            <!-- 캘린더 이미지를 표시할 ImageButton -->
+            <ImageButton
+                android:id="@+id/calendarButton"
+                android:layout_width="36dp"
+                android:layout_height="29dp"
+                android:layout_marginLeft="300dp"
+                android:layout_marginTop="20dp"
+                android:background="@android:color/transparent"
+                android:contentDescription="새로운 날짜 추가 버튼"
+                android:scaleType="centerInside"
+                app:srcCompat="@drawable/calendar_white" />
+
+        </RelativeLayout>
+
+<!--        <RelativeLayout-->
+<!--            android:id="@+id/alarmselect"-->
+<!--            android:layout_width="352dp"-->
+<!--            android:layout_height="70dp"-->
+<!--            android:layout_marginTop="20dp"-->
+<!--            android:layout_marginStart="30dp"-->
+<!--            android:background="@drawable/liner4"-->
+<!--            android:elevation="4dp"-->
+<!--            android:layout_below="@id/dayselect">-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/timeText"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginStart="14dp"-->
+<!--                android:layout_marginTop="20dp"-->
+<!--                android:fontFamily="@font/pretendard_medium"-->
+<!--                android:text="알림 설정"-->
+<!--                android:textColor="#111111"-->
+<!--                android:textSize="18dp" />-->
+
+<!--            <ImageButton-->
+<!--                android:id="@+id/setTimeButton"-->
+<!--                android:layout_width="38dp"-->
+<!--                android:layout_height="38dp"-->
+<!--                android:layout_marginLeft="300dp"-->
+<!--                android:layout_marginTop="20dp"-->
+<!--                android:background="@android:color/transparent"-->
+<!--                android:scaleType="centerInside"-->
+<!--                app:srcCompat="@drawable/plusbutton"-->
+<!--                android:contentDescription="새로운 아이템 추가 버튼" />-->
+<!--        </RelativeLayout>-->
+
+        <android.widget.Button
+            android:id="@+id/addButton"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_below="@+id/dayselect"
+            android:layout_marginTop="460dp"
+            android:background="#FA4756"
+            android:fontFamily="@font/pretendard_semibold"
+            android:text="개설하기"
+            android:paddingTop="12dp"
+            android:gravity="top|center"
+            android:textColor="#ffffff"
+            android:textSize="26dp" />
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

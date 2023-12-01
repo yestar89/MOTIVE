@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/menu_club"
+        android:title="클럽"
+        android:icon="@drawable/ic_club"/>
+    <item
+        android:id="@+id/menu_goal"
+        android:title="목표"
+        android:icon="@drawable/ic_goal"/>
+
+    <item
+        android:id="@+id/menu_home"
+        android:title="홈"
+        android:icon="@drawable/ic_home"/>
+
+    <item
+        android:id="@+id/menu_watch"
+        android:title="워치"
+        android:icon="@drawable/ic_watch"/>
+
+    <item
+        android:id="@+id/menu_profile"
+        android:title="마이페이지"
+        android:icon="@drawable/ic_profile"/>
+
+</menu>

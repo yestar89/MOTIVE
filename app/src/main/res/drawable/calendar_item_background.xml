@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true">
+        <shape android:shape="rectangle">
+
+            <solid android:color="#FA4756" /> <!-- 배경 색상 -->
+            <corners android:radius="600dp" /> <!-- 모서리 둥글기 -->
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="#F0EEFF" /> <!-- 배경 색상 (기본) -->
+            <corners android:radius="600dp" /> <!-- 모서리 둥글기 -->
+        </shape>
+    </item>
+</selector>
+
